@@ -16,6 +16,7 @@ function thewire_edit_init() {
 
 	$action_base = elgg_get_plugins_path() . 'thewire_edit/actions';
 	elgg_register_action("thewire/edit", "$action_base/edit.php");
+	elgg_register_action("thewire/delete", "$action_base/delete.php");
 	
 	elgg_unregister_plugin_hook_handler('register', 'menu:entity', 'thewire_setup_entity_menu_items');
 	elgg_register_plugin_hook_handler('register', 'menu:entity', 'thewire_edit_entity_menu_items');
