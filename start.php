@@ -6,7 +6,7 @@
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2
  * @copyright (c) RiverVanRain 2014
  *
- * @link http://weborganizm.org/crewz/p/1983/personal-net
+ * @link http://o.wzm.me/crewz/p/1983/personal-net
  *
  */
 
