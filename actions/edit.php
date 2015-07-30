@@ -29,7 +29,12 @@ if (!$guid) {
 	forward(REFERER);
 }
 
-$entity->description = $body;
+$tags = thewire_get_hashtags($text);
+if ($tags) {
+	$post->tags = $tags;
+}
+
+$entity->description = htmlspecialchars($body, ENT_NOQUOTES, 'UTF-8');
 $entity->access_id = $access_id;
 
 if ($entity->save()) {
